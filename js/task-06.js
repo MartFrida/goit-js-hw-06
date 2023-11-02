@@ -5,8 +5,8 @@
 
 const inputArea = document.querySelector('#validation-input');
 
-inputArea.addEventListener('blur', () =>
+inputArea.addEventListener('change', () =>   
   (inputArea.value.length == inputArea.getAttribute('data-length'))
-    ? inputArea.classList.add('valid')
-    : inputArea.classList.add('invalid')
-)
+    ? inputArea.className='valid'
+    : inputArea.className='invalid'
+);
